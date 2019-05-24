@@ -2,12 +2,13 @@ import discord
 
 from discord.ext import commands
 
-DiscordToken = open("token.not_bananice").readline()
+discordToken = open("token.not_bananice").readline()
 
-DiscordClient = commands.Bot(command_prefix = 'n!')
+discordClient = commands.Bot(command_prefix = 'n!')
 
-@DiscordClient.event
+@discordClient.event
 async def on_ready():
     print('Bot ready')
+    await discordClient.change_presence(activity = discord.Game("with Elicchi"))
 
-DiscordClient.run(DiscordToken)
+discordClient.run(discordToken)
