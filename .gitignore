@@ -102,3 +102,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+#discord bot specific stuff
+.not_bananice (these are settings files not meant to be shared to other places)
